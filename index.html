@@ -22,23 +22,24 @@
 
             <!-- form section start -->
             <div class="form-section">
-                <form action="">
+                <div>
                     <h1>Income</h1>
-                    <span>Income:</span> <input type="text">
+                    <span>Income:</span> <input id="income" type="number">
                     <div class="expenses">
                         <h1>Expenses</h1>
-                        <span>Food:</span> <input type="text"><br>
-                        <span>Rent:</span> <input type="text"><br>
-                        <span>Clothes:</span> <input type="text">
+                        <span>Food:</span> <input id="food" type="number"><br>
+                        <span>Rent:</span> <input id="rent" type="number"><br>
+                        <span>Clothes:</span> <input id="clothes" type="number">
                     </div>
-                    <button>Calculate</button> <br>
-                    <h2>Total Expense:</h2>
-                    <h2>Balance:</h2>
-                    <span>Save</span> <input type="text" id="pin" name="pin" maxlength="4" size="4"> <span>%</span>
-                    <button>Save</button> <br>
-                    <h2>Saving Amount: 2000</h2>
-                    <h2>Remaining Balance: 2500</h2>
-                </form>
+                    <button id="calculate-btn">Calculate</button> <br>
+                    <h2>Total Expenses: <span id="total-expenses">00</span></h2>
+                    <h2>Balance: <span id="balance">00</span></h2>
+                    <span>Save</span> <input type="number" id="save-input" name="pin" maxlength="4" size="4">
+                    <span>%</span>
+                    <button id="save-btn">Save</button> <br>
+                    <h2>Saving Amount: <span id="saving-amount">00</span></h2>
+                    <h2>Remaining Balance: <span id="remaining-balance">00</span></h2>
+                </div>
             </div>
             <!-- form section end -->
         </div>

@@ -44,6 +44,7 @@ input{
     border: none;
     margin: 10px 0;
     background-color: gray;
+    color: white;
 }
 
 /* resonsive for mobile start--------- */
@@ -54,7 +55,7 @@ input{
     grid-gap: 30px;
    }
    img{
-    Width: auto;
+    Width: 100%;
     Height: 400px;
 }
 h1{
