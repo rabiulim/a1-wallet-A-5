@@ -11,49 +11,53 @@
 
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-16 font-semibold text-purple-600">A1 Wallet</h1>
+        <h1 class="text-5xl text-center mt-16 font-semibold ">A1 Wallet</h1>
     </header>
-    <main class="flex gap-4 mx-auto mt-16">
-        <section>
-            <div class="mx-auto w-full">
+    <!-- header end -->
+    <main class="w-3/4 gap-4 mx-auto flex mt-10">
+        <!-- image section start -->
+        <section class="">
+            <div class="">
                 <img src="images/money-picture.jpg" alt="">
             </div>
         </section>
-        <section class="bg-green-500">
-            <h5 class="text-2xl text-center">income</h5>
-            <div class="inline-flex gap-2">
+
+        <!--  income section start  -->
+        <section class="bg-gray-200 p-4">
+            <h5 class="text-2xl text-center font-semibold">income</h5>
+            <div class="inline-flex gap-2 p-4">
                 <p class="text-1xl">income:</p>
-                <input class="text border border-indigo-600 border solid bg-indigo-500 " type="text">
+                <input class=" bg-gray-400 " type="text">
             </div>
-            <h5 class="text-2xl text-center">Expenses</h5>
+            <h5 class="text-2xl text-center font-semibold">Expenses</h5>
             <div class="grid grid-cols-1 p-4 ">
                 <div class="inline-flex gap-2">
                     <p class="text-1xl">Food:</p>
-                    <input class="text border border-indigo-600 border solid bg-indigo-500 " type="text">
+                    <input class="text  bg-gray-400 " type="text">
                 </div>
                 <div class="inline-flex gap-2 mt-4">
                     <p class="text-1xl">Rent:</p>
-                    <input class="text border border-indigo-600 border solid bg-indigo-500 " type="text">
+                    <input class="text bg-gray-400 " type="text">
                 </div>
                 <div class="inline-flex gap-2 mt-4">
                     <p class="text-1xl">Clothes:</p>
-                    <input class="text border border-indigo-600 border solid bg-indigo-500 " type="text">
+                    <input class="text bg-gray-400 mb-4" type="text">
                 </div>
-                <button class="bg-blue-400 m-4 p-2 text-white">Calculate</button>
+                <button class="bg-blue-500 mx-10 p-2 text-white">Calculate</button>
             </div>
             <div>
-                <p class="text-center">Total Expenses: <span>5500</span></p>
-                <p class="text-center">balance: <span>4500</span></p>
+                <p class="text-center text-2xl font-semibold">Total Expenses: <span>5500</span></p>
+                <p class="text-center text-2xl font-semibold">balance: <span>4500</span></p>
             </div>
-            <div class="inline-flex gap-2 mt-2 p-4">
-                <p class="text-1xl ">save:</p>
-                <input class="text border border-indigo-600 border solid bg-indigo-500 mb-4" type="text">
-                <span>%</span>
-                <button class="bg-blue-400 m-4 p-2 text-white">save</button>
+            <div class="inline-flex gap-2 mt-2">
+                <p class="text-1xl m-2">save:</p>
+                <input class="bg-gray-400 " type="text">
+                <span class="m-2">%</span>
+                <button class="bg-blue-500 text-white px-4">save</button>
             </div>
-            <div>
-                <p class="text-center">Saving Amount: <span>500</span></p>
-                <p class="text-center">Remaining Amount: <span>4500</span></p>
+            <div class="mt-4">
+                <p class="text-center font-semibold">Saving Amount: <span>500</span></p>
+                <p class="text-center font-semibold">Remaining Amount: <span>4500</span></p>
             </div>
         </section>
     </main>
