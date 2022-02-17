@@ -6,61 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A1 Wallet</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css style link -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="text-5xl text-center mt-16 font-semibold ">A1 Wallet</h1>
-    </header>
-    <!-- header end -->
-    <main class="w-3/4 gap-4 mx-auto flex mt-10">
-        <!-- image section start -->
-        <section class="">
-            <div class="">
+    <main>
+        <h1>A1 Wallet</h1>
+        <div class="conatainer">
+            <!-- image start -->
+            <div class="pic">
                 <img src="images/money-picture.jpg" alt="">
             </div>
-        </section>
+            <!-- image end -->
 
-        <!--  income section start  -->
-        <section class="bg-gray-200 p-4">
-            <h5 class="text-2xl text-center font-semibold">income</h5>
-            <div class="inline-flex gap-2 p-4">
-                <p class="text-1xl">income:</p>
-                <input class=" bg-gray-400 " type="text">
+            <!-- form section start -->
+            <div class="form-section">
+                <form action="">
+                    <h1>Income</h1>
+                    <span>Income:</span> <input type="text">
+                    <div class="expenses">
+                        <h1>Expenses</h1>
+                        <span>Food:</span> <input type="text"><br>
+                        <span>Rent:</span> <input type="text"><br>
+                        <span>Clothes:</span> <input type="text">
+                    </div>
+                    <button>Calculate</button> <br>
+                    <h2>Total Expense:</h2>
+                    <h2>Balance:</h2>
+                    <span>Save</span> <input type="text" id="pin" name="pin" maxlength="4" size="4"> <span>%</span>
+                    <button>Save</button> <br>
+                    <h2>Saving Amount: 2000</h2>
+                    <h2>Remaining Balance: 2500</h2>
+                </form>
             </div>
-            <h5 class="text-2xl text-center font-semibold">Expenses</h5>
-            <div class="grid grid-cols-1 p-4 ">
-                <div class="inline-flex gap-2">
-                    <p class="text-1xl">Food:</p>
-                    <input class="text  bg-gray-400 " type="text">
-                </div>
-                <div class="inline-flex gap-2 mt-4">
-                    <p class="text-1xl">Rent:</p>
-                    <input class="text bg-gray-400 " type="text">
-                </div>
-                <div class="inline-flex gap-2 mt-4">
-                    <p class="text-1xl">Clothes:</p>
-                    <input class="text bg-gray-400 mb-4" type="text">
-                </div>
-                <button class="bg-blue-500 mx-10 p-2 text-white">Calculate</button>
-            </div>
-            <div>
-                <p class="text-center text-2xl font-semibold">Total Expenses: <span>5500</span></p>
-                <p class="text-center text-2xl font-semibold">balance: <span>4500</span></p>
-            </div>
-            <div class="inline-flex gap-2 mt-2">
-                <p class="text-1xl m-2">save:</p>
-                <input class="bg-gray-400 " type="text">
-                <span class="m-2">%</span>
-                <button class="bg-blue-500 text-white px-4">save</button>
-            </div>
-            <div class="mt-4">
-                <p class="text-center font-semibold">Saving Amount: <span>500</span></p>
-                <p class="text-center font-semibold">Remaining Amount: <span>4500</span></p>
-            </div>
-        </section>
+            <!-- form section end -->
+        </div>
+
     </main>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>
