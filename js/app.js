@@ -1,4 +1,4 @@
-// all id here
+// all id start
 
 let income = document.getElementById("income");
 let Food = document.getElementById("food");
